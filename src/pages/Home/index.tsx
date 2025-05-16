@@ -32,7 +32,7 @@ const Home = () => {
               key={category.id}
               to={`${ROUTES.CATALOG}`}
               className="category-card"
-              onClick={(e) => {
+              onClick={(_) => {
                 // Сохраняем выбранную категорию в localStorage для использования в каталоге
                 localStorage.setItem('selectedCategoryId', category.id);
               }}

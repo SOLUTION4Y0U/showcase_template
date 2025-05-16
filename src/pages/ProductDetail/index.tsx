@@ -26,7 +26,7 @@ const ProductDetail = () => {
   });
 
   // Используем BackButton с интеграцией с историей навигации
-  const backButton = useTelegramBackButton({
+  const _backButton = useTelegramBackButton({
     enableNavigationHistory: true
   });
 

@@ -6,6 +6,7 @@ import './ProductInfo.css';
 
 interface ProductInfoProps {
   product: Product;
+  onAddToCart?: () => void;
 }
 
 const ProductInfo: FC<ProductInfoProps> = ({ product }) => {

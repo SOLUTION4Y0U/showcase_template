@@ -19,7 +19,7 @@ const Cart = () => {
     isVisible: cart.items.length > 0
   });
 
-  const backButton = useTelegramBackButton({
+  const _backButton = useTelegramBackButton({
     enableNavigationHistory: true
   });
 

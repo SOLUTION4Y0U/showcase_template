@@ -33,7 +33,7 @@ const CheckoutPage = () => {
     isActive: !loading
   });
 
-  const backButton = useTelegramBackButton({
+  const _backButton = useTelegramBackButton({
     enableNavigationHistory: true
   });
 
