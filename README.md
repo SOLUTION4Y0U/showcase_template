@@ -11,6 +11,8 @@ Vite (which means "fast" in French) is a front-end build tool and development se
 
 This template provides a minimal setup to get TMA working in Vite with React, TypeScript, HMR and some ESLint rules.
 
+d1
+
 
 
 ## 🚀 Deploy
