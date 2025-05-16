@@ -33,10 +33,6 @@ const CheckoutPage = () => {
     isActive: !loading
   });
 
-  const _backButton = useTelegramBackButton({
-    enableNavigationHistory: true
-  });
-
   // Обработчик отправки заказа
   const handleSubmitOrder = async () => {
     // Даем тактильный отклик при нажатии

@@ -5,7 +5,6 @@ import CartItem from '../../components/features/CartItem';
 import CartSummary from '../../components/features/CartSummary';
 import { useCart } from '../../hooks/useCart';
 import { useTelegramMainButton } from '../../hooks/useTelegramMainButton';
-import { useTelegramBackButton } from '../../hooks/useTelegramBackButton';
 import { useTelegramUI } from '../../context/TelegramUIContext';
 import './Cart.css';
 
@@ -17,10 +16,6 @@ const Cart = () => {
   const mainButton = useTelegramMainButton({
     text: 'Оформить заказ',
     isVisible: cart.items.length > 0
-  });
-
-  const _backButton = useTelegramBackButton({
-    enableNavigationHistory: true
   });
 
   // Обработчик перехода к оформлению заказа

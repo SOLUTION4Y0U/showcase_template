@@ -5,7 +5,6 @@ import ImageGallery from '../../components/features/ImageGallery';
 import ProductInfo from '../../components/features/ProductInfo';
 import RecommendedProducts from '../../components/features/RecommendedProducts';
 import { useTelegramMainButton } from '../../hooks/useTelegramMainButton';
-import { useTelegramBackButton } from '../../hooks/useTelegramBackButton';
 import { useTelegramUI } from '../../context/TelegramUIContext';
 import { useCartStore } from '../../store/cart';
 import { ROUTES } from '../../constants/routes';
@@ -23,11 +22,6 @@ const ProductDetail = () => {
     text: 'Добавить в корзину',
     isVisible: !loading && !error && !!product,
     isActive: product?.stock ? product.stock > 0 : false
-  });
-
-  // Используем BackButton с интеграцией с историей навигации
-  const _backButton = useTelegramBackButton({
-    enableNavigationHistory: true
   });
 
   // Обработчик добавления в корзину
