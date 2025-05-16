@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import { ROUTES } from './constants/routes';
 
 // Импорт страниц (заглушки, реализуем позже)
@@ -9,7 +9,7 @@ import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import AppLayout from './components/layout/AppLayout';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <AppLayout />,
@@ -36,7 +36,9 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+], {
+  basename: '/'
+});
 
 export const Router = () => {
   return <RouterProvider router={router} />;
