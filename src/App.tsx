@@ -1,7 +1,8 @@
 import { useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import twaLogo from './assets/tapps.png'
-import viteLogo from '/vite.svg'
+// Удаляем неиспользуемые импорты
+// import reactLogo from './assets/react.svg'
+// import twaLogo from './assets/tapps.png'
+// import viteLogo from '/vite.svg'
 import './App.css'
 import './theme/global.css'
 
