@@ -17,6 +17,12 @@
   color: #333;
 }
 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .nav {
   display: flex;
   gap: 1rem;
@@ -57,5 +63,13 @@
   .platform-indicator {
     font-size: 0.875rem;
     padding: 0.35rem 0.7rem;
+  }
+
+  .header-right {
+    gap: 1.5rem;
+  }
+
+  .nav {
+    gap: 1.5rem;
   }
 }
