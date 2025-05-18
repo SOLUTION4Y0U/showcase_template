@@ -11,9 +11,10 @@ Vite (which means "fast" in French) is a front-end build tool and development se
 
 This template provides a minimal setup to get TMA working in Vite with React, TypeScript, HMR and some ESLint rules.
 
-d1
+## 📍 Versions
+`0` - working fix. works in browser and tgapp
 
-
+## 📚 Docs
 
 ## 🚀 Deploy
 
@@ -58,7 +59,6 @@ docker-compose up -d
 ```
 
 Nginx Proxy configuration on a separate server
-
 
 # Links
 - [Doc](https://docs.ton.org/develop/dapps/twa)
