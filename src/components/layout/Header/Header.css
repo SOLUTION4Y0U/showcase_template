@@ -2,19 +2,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  background-color: var(--card-bg);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-  font-size: 1.5rem;
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .logo a {
-  color: var(--primary-color);
   text-decoration: none;
+  color: #333;
 }
 
 .nav {
@@ -22,10 +22,40 @@
   gap: 1rem;
 }
 
+.nav-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  gap: 0.5rem;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* По умолчанию скрываем текст на маленьких экранах */
+.nav-text {
+  display: none;
+}
+
 .platform-indicator {
-  padding: 0.25rem 0.5rem;
-  background-color: var(--primary-color);
-  color: white;
-  border-radius: 4px;
   font-size: 0.75rem;
+  background-color: #f0f0f0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  color: #666;
+}
+
+/* Медиа-запрос для показа текста на более широких экранах */
+@media (min-width: 768px) {
+  .nav-text {
+    display: inline;
+  }
+
+  .platform-indicator {
+    font-size: 0.875rem;
+    padding: 0.35rem 0.7rem;
+  }
 }
