@@ -1,10 +1,19 @@
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 1rem;
+  justify-content: center;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0.5rem 16px;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -71,5 +80,19 @@
 
   .nav {
     gap: 1.5rem;
+  }
+}
+
+/* Для больших экранов: увеличиваем отступы */
+@media (min-width: 1201px) {
+  .header-container {
+    padding: 0.5rem 24px;
+  }
+}
+
+/* Для мобильных устройств: уменьшаем отступы */
+@media (max-width: 480px) {
+  .header-container {
+    padding: 0.5rem 12px;
   }
 }
