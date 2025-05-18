@@ -5,12 +5,30 @@ html, body, #root {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
+  /* Скрытие скроллбаров для Firefox */
+  scrollbar-width: none;
+  /* Скрытие скроллбаров для IE и Edge */
+  -ms-overflow-style: none;
+}
+
+/* Скрытие скроллбаров для Webkit (Chrome, Safari, новые версии Edge) */
+::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
 }
 
 body {
   overflow-y: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Применяем скрытие скроллбаров ко всем элементам с прокруткой */
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 /* Основной контейнер приложения */
