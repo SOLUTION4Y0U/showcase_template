@@ -13,6 +13,7 @@ This template provides a minimal setup to get TMA working in Vite with React, Ty
 
 ## 📍 Versions
 `0` - working fix. works in browser and tgapp
+`1` - UI fix. works in browser and tgapp
 
 ## 📚 Docs
 
