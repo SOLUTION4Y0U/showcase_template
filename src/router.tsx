@@ -34,11 +34,13 @@ const router = createHashRouter([
         path: `${ROUTES.CHECKOUT}/*`,
         element: <Checkout />,
       },
+      {
+        path: '*',
+        element: <Home />
+      }
     ],
   },
-], {
-  basename: '/'
-});
+]);
 
 export const Router = () => {
   return <RouterProvider router={router} />;
