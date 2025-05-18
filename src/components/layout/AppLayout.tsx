@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { useEffect } from 'react';
 import Header from './Header';
+import Footer from './Footer';
 import WebApp from '@twa-dev/sdk';
 import './AppLayout.css';
 import { useFullScreen } from '../../hooks/useFullScreen';
@@ -27,6 +28,7 @@ const AppLayout = () => {
       <main className="main-content">
         <Outlet />
       </main>
+      <Footer />
     </div>
   );
 };
